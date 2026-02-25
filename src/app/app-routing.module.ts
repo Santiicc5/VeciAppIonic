@@ -38,6 +38,11 @@ const routes: Routes = [
         (m) => m.MantenimientoPage
       ),
   },
+  {
+  path: 'docs',
+  loadComponent: () =>
+    import('./docs/docs.page').then((m) => m.DocsPage),
+},
 ];
 
 @NgModule({

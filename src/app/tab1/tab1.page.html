@@ -81,21 +81,24 @@
     </div>
 
     <div class="quick">
-      <div class="quick-item">
+      <!-- Docs -->
+      <div class="quick-item" (click)="go('/docs')">
         <div class="quick-ico">
           <ion-icon name="document-text-outline"></ion-icon>
         </div>
         <div class="quick-t">Docs</div>
       </div>
 
-      <div class="quick-item" routerLink="/mantenimiento">
-  <div class="quick-ico">
-    <ion-icon name="alert-outline"></ion-icon>
-  </div>
-  <div class="quick-t">Incidencias</div>
-</div>
+      <!-- Incidencias -->
+      <div class="quick-item" (click)="go('/mantenimiento')">
+        <div class="quick-ico">
+          <ion-icon name="alert-outline"></ion-icon>
+        </div>
+        <div class="quick-t">Incidencias</div>
+      </div>
 
-      <div class="quick-item">
+      <!-- Juntas -->
+      <div class="quick-item" (click)="go('/meetings')">
         <div class="quick-ico">
           <ion-icon name="megaphone-outline"></ion-icon>
         </div>
