@@ -27,6 +27,12 @@ const routes: Routes = [
   loadComponent: () =>
     import('./mantenimiento/mantenimiento.page').then((m) => m.MantenimientoPage),
 },
+ {
+  path: 'nueva-incidencia',
+  loadComponent: () =>
+    import('./nueva-incidencia/nueva-incidencia.page').then((m) => m.NuevaIncidenciaPage),
+},
+
 ];
 
 @NgModule({

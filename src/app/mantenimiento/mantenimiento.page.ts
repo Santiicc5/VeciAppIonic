@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mantenimiento',
@@ -9,4 +10,10 @@ import { IonicModule } from '@ionic/angular';
   standalone: true,
   imports: [IonicModule, CommonModule],
 })
-export class MantenimientoPage {}
+export class MantenimientoPage {
+  constructor(private router: Router) {}
+
+  goNuevaIncidencia() {
+    this.router.navigateByUrl('/nueva-incidencia');
+  }
+}

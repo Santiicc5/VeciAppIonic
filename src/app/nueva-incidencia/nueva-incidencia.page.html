@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar class="ni-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/mantenimiento"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Nueva incidencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ni-content">
+  <div class="ni-page">
+
+    <div class="field">
+      <div class="lbl">Título</div>
+      <ion-input placeholder="Ej: Fuga de agua"></ion-input>
+    </div>
+
+    <div class="field">
+      <div class="lbl">Descripción</div>
+      <ion-textarea autoGrow="true" placeholder="Describe el problema..."></ion-textarea>
+    </div>
+
+    <div class="field">
+      <div class="lbl">Prioridad</div>
+      <ion-select placeholder="Selecciona">
+        <ion-select-option value="baja">Baja</ion-select-option>
+        <ion-select-option value="media">Media</ion-select-option>
+        <ion-select-option value="alta">Alta</ion-select-option>
+      </ion-select>
+    </div>
+
+    <div class="field">
+      <div class="lbl">Ubicación (piso/puerta)</div>
+      <ion-input placeholder="Ej: 3º B"></ion-input>
+    </div>
+
+    <ion-button expand="block" class="save-btn">
+      Guardar incidencia
+    </ion-button>
+
+  </div>
+</ion-content>
