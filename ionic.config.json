@@ -1,0 +1,7 @@
+{
+  "name": "VeciApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
