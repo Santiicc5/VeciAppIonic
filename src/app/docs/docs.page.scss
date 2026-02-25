@@ -1,0 +1,71 @@
+.header-blue ion-toolbar{
+  --background:#2f59ff;
+  --color:#fff;
+}
+
+.page{
+  --background:#f6f6f6;
+}
+
+.section{
+  padding: 16px 16px 0;
+}
+
+h2{
+  margin: 0 0 12px;
+  font-size: 22px;
+  font-weight: 700;
+  color:#1f2937;
+}
+
+.chips{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 12px;
+}
+
+.chip{
+  height: 34px;
+  border-radius: 18px;
+  border: 1.5px solid #c8d2ff;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 15px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+
+.doclist{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.doc{
+  background:#fff;
+  border-radius: 12px;
+  padding: 12px 12px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.doc-text{
+  font-size: 15px;
+  color:#111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 10px;
+}
+
+.doc-text.two-line{
+  white-space: pre-line;
+  line-height: 1.2;
+}
+
+.doc-chev{
+  color:#9aa3b2;
+  font-size: 18px;
+}

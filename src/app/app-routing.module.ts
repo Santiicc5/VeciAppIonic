@@ -22,10 +22,26 @@ const routes: Routes = [
     loadComponent: () =>
       import('./chat/chat.page').then((m) => m.ChatPage),
   },
-{
-  path: 'mantenimiento',
+
+  // ✅ Juntas y votaciones
+  {
+    path: 'meetings',
+    loadComponent: () =>
+      import('./meetings/meetings.page').then((m) => m.MeetingsPage),
+  },
+
+  // ✅ Mantenimiento
+  {
+    path: 'mantenimiento',
+    loadComponent: () =>
+      import('./mantenimiento/mantenimiento.page').then(
+        (m) => m.MantenimientoPage
+      ),
+  },
+  {
+  path: 'docs',
   loadComponent: () =>
-    import('./mantenimiento/mantenimiento.page').then((m) => m.MantenimientoPage),
+    import('./docs/docs.page').then((m) => m.DocsPage),
 },
  {
   path: 'nueva-incidencia',
