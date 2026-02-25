@@ -1,17 +1,27 @@
-<ion-header [translucent]="true">
+<ion-header class="header-blue">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title>Chats</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="page">
+  <div class="search-wrap">
+    <ion-item lines="none" class="search-item">
+      <ion-icon name="search" slot="start"></ion-icon>
+      <ion-input placeholder="Buscar chats..." [(ngModel)]="query"></ion-input>
+    </ion-item>
+  </div>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="list">
+    <ion-item class="row" lines="none" button *ngFor="let c of filteredChats">
+      <ion-icon [name]="c.icon" slot="start" class="left-icon"></ion-icon>
+
+      <ion-label>
+        <h2 [class.bold]="c.title === 'Escalera 1'">{{ c.title }}</h2>
+      </ion-label>
+
+      <ion-badge *ngIf="c.badge" class="badge">{{ c.badge }}</ion-badge>
+      <ion-icon name="chevron-forward" slot="end" class="chev"></ion-icon>
+    </ion-item>
+  </div>
 </ion-content>

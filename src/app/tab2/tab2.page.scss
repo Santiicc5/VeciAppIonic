@@ -1,0 +1,63 @@
+.header-blue ion-toolbar {
+  --background: #2f59ff;
+  --color: #fff;
+}
+
+.page {
+  --background: #f3f5fb;
+}
+
+.search-wrap {
+  padding: 12px 14px 6px;
+}
+
+.search-item {
+  --background: #ffffff;
+  border-radius: 12px;
+  padding-left: 6px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.search-item ion-icon {
+  color: #9aa3b2;
+}
+
+.list {
+  padding: 10px 14px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  --background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.left-icon {
+  font-size: 22px;
+  color: #2f59ff;
+}
+
+.row h2 {
+  margin: 0;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.chev {
+  color: #9aa3b2;
+}
+
+.badge {
+  margin-right: 6px;
+  --background: #2f59ff;
+  --color: #fff;
+  border-radius: 10px;
+}
