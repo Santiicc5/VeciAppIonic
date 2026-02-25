@@ -1,13 +1,100 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>tab4</ion-title>
+<ion-header>
+  <ion-toolbar class="c-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Contactos</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tab4</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="c-content">
+  <div class="c-page">
+
+    <div class="sec-title">Proveedores</div>
+
+    <div class="box">
+      <div class="item">
+        <div class="left">
+          <div class="icon plumbing">🔧</div>
+          <div class="txt">
+            <div class="name">Fontanería</div>
+            <div class="sub">Tlf: 912 123 132</div>
+          </div>
+        </div>
+        <ion-button fill="clear" class="call">
+          <ion-icon name="call"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div class="item">
+        <div class="left">
+          <div class="icon light">💡</div>
+          <div class="txt">
+            <div class="name">Electricista</div>
+            <div class="sub">Tlf: 914 454 656</div>
+          </div>
+        </div>
+        <ion-button fill="clear" class="call">
+          <ion-icon name="call"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div class="item">
+        <div class="left">
+          <div class="icon clean">🧴</div>
+          <div class="txt">
+            <div class="name">Limpieza</div>
+            <div class="sub">Tlf: 932 567 987</div>
+          </div>
+        </div>
+        <ion-button fill="clear" class="call">
+          <ion-icon name="call"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+
+    <div class="sec-title">Servicios y emergencias</div>
+
+    <div class="box">
+      <div class="item">
+        <div class="left">
+          <div class="icon emergency">🚨</div>
+          <div class="txt">
+            <div class="name">Emergencias</div>
+            <div class="sub">Tlf: 112</div>
+          </div>
+        </div>
+        <ion-button fill="clear" class="call">
+          <ion-icon name="call"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div class="item">
+        <div class="left">
+          <div class="icon guard">🛡️</div>
+          <div class="txt">
+            <div class="name">Guardia Civil</div>
+            <div class="sub">Tlf: 062</div>
+          </div>
+        </div>
+        <ion-button fill="clear" class="call">
+          <ion-icon name="call"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div class="item">
+        <div class="left">
+          <div class="icon gas">⚠️</div>
+          <div class="txt">
+            <div class="name">Gas</div>
+            <div class="sub">Tlf: 900 101 051</div>
+          </div>
+        </div>
+        <ion-button fill="clear" class="call">
+          <ion-icon name="call"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+
+  </div>
 </ion-content>

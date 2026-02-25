@@ -1,0 +1,82 @@
+.c-toolbar{
+  --background:#2f59ff;
+  --color:#fff;
+}
+
+.c-content{
+  --background:#eef1f7;
+}
+
+.c-page{
+  padding: 18px;
+}
+
+.sec-title{
+  font-size: 18px;
+  font-weight: 800;
+  color:#111827;
+  margin: 16px 0 10px;
+}
+
+.box{
+  background:#fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px rgba(0,0,0,.10);
+  margin-bottom: 14px;
+}
+
+.item{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 12px 12px;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+.item:last-child{
+  border-bottom: none;
+}
+
+.left{
+  display:flex;
+  align-items:center;
+  gap: 12px;
+}
+
+.icon{
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size: 18px;
+  background:#eef1f7;
+}
+
+.txt .name{
+  font-weight: 800;
+  color:#111827;
+  font-size: 14px;
+}
+
+.txt .sub{
+  font-size: 12px;
+  color:#6b7280;
+  margin-top: 2px;
+}
+
+/* Botón llamada */
+.call{
+  --color:#2f59ff;
+  font-size: 20px;
+}
+
+/* opcional: variaciones suaves */
+.plumbing{ background:#e8f0ff; }
+.light{ background:#fff4d6; }
+.clean{ background:#e9fff1; }
+.emergency{ background:#ffe8e8; }
+.guard{ background:#e8f0ff; }
+.gas{ background:#fff4d6; }
