@@ -22,11 +22,22 @@ const routes: Routes = [
     loadComponent: () =>
       import('./chat/chat.page').then((m) => m.ChatPage),
   },
-{
-  path: 'meetings',
-  loadComponent: () =>
-    import('./meetings/meetings.page').then((m) => m.MeetingsPage),
-},
+
+  // ✅ Juntas y votaciones
+  {
+    path: 'meetings',
+    loadComponent: () =>
+      import('./meetings/meetings.page').then((m) => m.MeetingsPage),
+  },
+
+  // ✅ Mantenimiento
+  {
+    path: 'mantenimiento',
+    loadComponent: () =>
+      import('./mantenimiento/mantenimiento.page').then(
+        (m) => m.MantenimientoPage
+      ),
+  },
 ];
 
 @NgModule({
