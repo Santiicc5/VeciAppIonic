@@ -8,12 +8,21 @@
   <div class="search-wrap">
     <ion-item lines="none" class="search-item">
       <ion-icon name="search" slot="start"></ion-icon>
-      <ion-input placeholder="Buscar chats..." [(ngModel)]="query"></ion-input>
+      <ion-input
+        placeholder="Buscar chats..."
+        [(ngModel)]="query">
+      </ion-input>
     </ion-item>
   </div>
 
   <div class="list">
-    <ion-item class="row" lines="none" button *ngFor="let c of filteredChats">
+    <ion-item
+      class="row"
+      lines="none"
+      button
+      *ngFor="let c of filteredChats"
+      [routerLink]="c.title === 'Comunidad' ? ['/chat','comunidad'] : null">
+
       <ion-icon [name]="c.icon" slot="start" class="left-icon"></ion-icon>
 
       <ion-label>

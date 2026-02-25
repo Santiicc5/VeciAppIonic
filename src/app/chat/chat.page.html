@@ -1,0 +1,30 @@
+<ion-header class="header-blue">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="page">
+  <div class="msgs">
+    <div *ngFor="let m of messages" class="msg" [class.mine]="m.mine">
+      <div class="name" [class.red]="m.color==='red'" [class.green]="m.color==='green'" *ngIf="!m.mine">
+        {{ m.user }}
+      </div>
+      <div class="bubble">
+        {{ m.text }}
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="footer">
+  <div class="inputbar">
+    <input class="text" placeholder="Escribe un mensaje..." [(ngModel)]="input" (keydown.enter)="send()"/>
+    <button class="send" (click)="send()">
+      <ion-icon name="paper-plane"></ion-icon>
+    </button>
+  </div>
+</ion-footer>
