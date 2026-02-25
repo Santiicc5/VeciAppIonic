@@ -23,8 +23,8 @@
 <ion-footer class="footer">
   <div class="inputbar">
     <input class="text" placeholder="Escribe un mensaje..." [(ngModel)]="input" (keydown.enter)="send()"/>
-    <button class="send" (click)="send()">
-      <ion-icon name="paper-plane"></ion-icon>
-    </button>
+    <button class="send" (click)="send()" aria-label="Enviar mensaje">
+  <ion-icon name="paper-plane"></ion-icon>
+</button>
   </div>
 </ion-footer>
