@@ -22,6 +22,11 @@ const routes: Routes = [
     loadComponent: () =>
       import('./chat/chat.page').then((m) => m.ChatPage),
   },
+{
+  path: 'mantenimiento',
+  loadComponent: () =>
+    import('./mantenimiento/mantenimiento.page').then((m) => m.MantenimientoPage),
+},
 ];
 
 @NgModule({

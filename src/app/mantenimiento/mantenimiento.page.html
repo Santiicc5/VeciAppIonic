@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar class="m-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Mantenimiento</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="m-content">
+  <div class="m-page">
+
+    <div class="row-head">
+      <div class="h2">Incidencias</div>
+      <ion-button fill="clear" class="plus-btn">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </div>
+
+    <div class="inc-list">
+      <div class="inc-item">
+        <ion-icon name="alert-circle" class="inc-ico"></ion-icon>
+        <div>Fuga de agua</div>
+      </div>
+      <div class="inc-item">
+        <ion-icon name="alert-circle" class="inc-ico"></ion-icon>
+        <div>Bombilla fundida</div>
+      </div>
+    </div>
+
+    <div class="row-head agenda">
+      <div class="h2">Agenda</div>
+      <ion-icon name="calendar-outline" class="cal"></ion-icon>
+    </div>
+
+    <div class="cal-card">
+      <div class="cal-top">
+        <ion-button fill="clear" class="nav">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </ion-button>
+        <div class="month">Diciembre</div>
+        <ion-button fill="clear" class="nav">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+      <div class="week">
+        <div>LUN</div><div>MAR</div><div>MIE</div><div>JUE</div><div>VIE</div><div>SÁB</div><div>DOM</div>
+      </div>
+
+      <div class="grid">
+        <!-- semana 1 -->
+        <div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div>
+        <div class="d">1</div><div class="d">2</div>
+
+        <!-- semana 2 -->
+        <div class="d">3</div><div class="d">4</div><div class="d">5</div><div class="d">6</div><div class="d">7</div><div class="d">8</div><div class="d">9</div>
+
+        <!-- semana 3 -->
+        <div class="d">10</div><div class="d">11</div><div class="d">12</div><div class="d">13</div><div class="d">14</div><div class="d">15</div><div class="d">16</div>
+
+        <!-- semana 4 -->
+        <div class="d">17</div><div class="d selected">18</div><div class="d">19</div><div class="d">20</div><div class="d">21</div><div class="d">22</div><div class="d">23</div>
+
+        <!-- semana 5 -->
+        <div class="d">24</div><div class="d">25</div><div class="d">26</div><div class="d">27</div><div class="d">28</div><div class="d">29</div><div class="d">30</div>
+
+        <!-- semana 6 -->
+        <div class="d">31</div><div class="d other">1</div><div class="d other">2</div><div class="d other">3</div><div class="d other">4</div><div class="d other">5</div><div class="d other">6</div>
+      </div>
+    </div>
+
+  </div>
+</ion-content>
