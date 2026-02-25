@@ -27,6 +27,10 @@ const routes: Routes = [
         redirectTo: '/tabs/tab1',
         pathMatch: 'full',
       },
+    {
+  path: 'tab4',
+  loadComponent: () => import('../tab4/tab4.page').then((m) => m.Tab4Page),
+        },
     ],
   },
   {

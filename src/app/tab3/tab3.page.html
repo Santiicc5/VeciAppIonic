@@ -1,17 +1,26 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+<ion-header>
+  <ion-toolbar class="eco-toolbar">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Economía</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="eco-content">
+  <div class="eco-page">
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <div class="block-title">Estado de cuotas</div>
+    <div class="eco-card">
+      <ion-icon name="cash-outline" class="money"></ion-icon>
+      <div class="eco-text">Mensualidad</div>
+    </div>
+
+    <div class="block-title">Presupuestos</div>
+    <div class="eco-card">
+      <ion-icon name="cash-outline" class="money"></ion-icon>
+      <div class="eco-text">Ascensor nuevo</div>
+    </div>
+
+  </div>
 </ion-content>
