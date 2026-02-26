@@ -38,4 +38,17 @@
   font-weight: 700;
   color:#111827;
 }
+
 .clickable { cursor: pointer; }
+
+/* ✅ Cards para gráficas */
+.chart-card{
+  display:block;
+  padding: 12px;
+}
+
+/* ✅ Importante para que Chart.js se vea bien */
+canvas{
+  width: 100% !important;
+  height: 220px !important;
+}

@@ -7,6 +7,19 @@
 <ion-content class="eco-content">
   <div class="eco-page">
 
+    <!-- Gráfico 1 -->
+    <div class="block-title">Gastos por mes</div>
+    <div class="eco-card chart-card">
+      <canvas id="gastosChart"></canvas>
+    </div>
+
+    <!-- Gráfico 2 -->
+    <div class="block-title">Cuotas pagadas vs pendientes</div>
+    <div class="eco-card chart-card">
+      <canvas id="cuotasChart"></canvas>
+    </div>
+
+    <!-- Lo que ya tenías -->
     <div class="block-title">Estado de cuotas</div>
     <div class="eco-card clickable" (click)="goPago()">
       <ion-icon name="cash-outline" class="money"></ion-icon>
