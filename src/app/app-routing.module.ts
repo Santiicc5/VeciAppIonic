@@ -48,6 +48,18 @@ const routes: Routes = [
   loadComponent: () =>
     import('./nueva-incidencia/nueva-incidencia.page').then((m) => m.NuevaIncidenciaPage),
 },
+ {
+  path: 'alertas1',
+  loadComponent: () =>
+    import('./alertas1/alertas1.page').then((m) => m.Alertas1Page),
+},
+ {
+  path: 'alertas2',
+  loadComponent: () =>
+    import('./alertas2/alertas2.page').then((m) => m.Alertas2Page),
+},
+
+
 
 ];
 
