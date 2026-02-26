@@ -43,10 +43,17 @@ const routes: Routes = [
   loadComponent: () =>
     import('./docs/docs.page').then((m) => m.DocsPage),
 },
+<<<<<<< HEAD
   {
   path: 'docs-folder/:name',
   loadComponent: () =>
     import('./docs-folder/docs-folder.page').then((m) => m.DocsFolderPage),
+=======
+ {
+  path: 'nueva-incidencia',
+  loadComponent: () =>
+    import('./nueva-incidencia/nueva-incidencia.page').then((m) => m.NuevaIncidenciaPage),
+>>>>>>> ccb41835bd1e3763158701f31138cc7f37550173
 },
 
 ];

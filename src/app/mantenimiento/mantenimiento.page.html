@@ -12,7 +12,9 @@
 
     <div class="row-head">
       <div class="h2">Incidencias</div>
-      <ion-button fill="clear" class="plus-btn">
+
+      <!-- BOTÓN + -->
+      <ion-button fill="clear" class="plus-btn" (click)="goNuevaIncidencia()">
         <ion-icon name="add"></ion-icon>
       </ion-button>
     </div>
@@ -49,23 +51,17 @@
       </div>
 
       <div class="grid">
-        <!-- semana 1 -->
         <div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div><div class="d"></div>
         <div class="d">1</div><div class="d">2</div>
 
-        <!-- semana 2 -->
         <div class="d">3</div><div class="d">4</div><div class="d">5</div><div class="d">6</div><div class="d">7</div><div class="d">8</div><div class="d">9</div>
 
-        <!-- semana 3 -->
         <div class="d">10</div><div class="d">11</div><div class="d">12</div><div class="d">13</div><div class="d">14</div><div class="d">15</div><div class="d">16</div>
 
-        <!-- semana 4 -->
         <div class="d">17</div><div class="d selected">18</div><div class="d">19</div><div class="d">20</div><div class="d">21</div><div class="d">22</div><div class="d">23</div>
 
-        <!-- semana 5 -->
         <div class="d">24</div><div class="d">25</div><div class="d">26</div><div class="d">27</div><div class="d">28</div><div class="d">29</div><div class="d">30</div>
 
-        <!-- semana 6 -->
         <div class="d">31</div><div class="d other">1</div><div class="d other">2</div><div class="d other">3</div><div class="d other">4</div><div class="d other">5</div><div class="d other">6</div>
       </div>
     </div>
