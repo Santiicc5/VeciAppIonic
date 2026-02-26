@@ -1,37 +1,37 @@
 <ion-header>
-  <ion-toolbar class="p2-toolbar">
+  <ion-toolbar class="pay-toolbar">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/pago"></ion-back-button>
+      <ion-back-button defaultHref="/pago" text=""></ion-back-button>
     </ion-buttons>
-    <ion-title>Pago</ion-title>
+    <ion-title class="pay-title">Pago</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="p2-content">
-  <div class="p2-page">
+<ion-content class="pay-content">
+  <div class="pay-page">
 
-    <div class="group">
+    <div class="field">
       <div class="lbl">Email</div>
-      <ion-input placeholder="123@gmail.com"></ion-input>
+      <ion-input class="inp" placeholder="123@gmail.com"></ion-input>
     </div>
 
-    <div class="group">
+    <div class="field">
       <div class="lbl">Card information</div>
 
-      <div class="row">
-        <ion-input placeholder="0000 0000 0000 0000"></ion-input>
-        <div class="mini-card">💳</div>
+      <div class="row cardline">
+        <ion-input class="inp" placeholder="0000 0000 0000 0000"></ion-input>
+        <div class="card-ico" aria-hidden="true">💳</div>
       </div>
 
-      <div class="row2">
-        <ion-input placeholder="MM/YY"></ion-input>
-        <ion-input placeholder="CVC"></ion-input>
+      <div class="row two">
+        <ion-input class="inp" placeholder="MM/YY"></ion-input>
+        <ion-input class="inp" placeholder="CVC"></ion-input>
       </div>
     </div>
 
-    <div class="group">
+    <div class="field">
       <div class="lbl">Name on card</div>
-      <ion-input placeholder="Name"></ion-input>
+      <ion-input class="inp" placeholder="Name"></ion-input>
     </div>
 
   </div>

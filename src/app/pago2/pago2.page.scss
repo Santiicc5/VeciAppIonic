@@ -1,58 +1,82 @@
-.p2-toolbar{
-  --background:#2f59ff;
+/* Header azul degradado */
+.pay-toolbar{
   --color:#fff;
+  --background: transparent;
+}
+.pay-toolbar::part(background){
+  background: linear-gradient(180deg, #1f46c6 0%, #2f59ff 100%);
 }
 
-.p2-content{
-  --background:#eef1f7;
+/* Fondo suave como iOS */
+.pay-content{
+  --background: linear-gradient(180deg, #eef1f7 0%, #f6f7fb 55%, #eef1f7 100%);
 }
 
-.p2-page{
-  padding: 18px;
+.pay-title{
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* Layout */
+.pay-page{
+  padding: 26px 26px 18px;
+  max-width: 420px;
+  margin: 0 auto;
   display:flex;
   flex-direction:column;
-  gap: 16px;
+  gap: 18px;
 }
 
-.group{
-  display:flex;
-  flex-direction:column;
-  gap: 6px;
-}
-
+/* Labels pequeños */
 .lbl{
   font-size: 12px;
-  font-weight: 800;
-  color:#111827;
+  font-weight: 700;
+  color: #111827;
   opacity: .75;
+  margin-bottom: 8px;
 }
 
-ion-input{
+/* Inputs estilo mock (borde fino, sin sombra) */
+.inp{
   background:#fff;
-  border-radius: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0.14);
   padding-left: 10px;
-  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+  height: 36px;
+  font-size: 13px;
+  color:#111827;
 }
 
+/* Filas */
 .row{
   display:flex;
-  align-items:center;
   gap: 10px;
+  align-items:center;
 }
 
-.mini-card{
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  background:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+.row.two .inp{
+  flex: 1;
 }
 
-.row2{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+/* Línea de tarjeta + icono */
+.cardline{
+  position: relative;
+}
+.cardline .inp{
+  flex: 1;
+  padding-right: 42px; /* espacio para icono */
+}
+
+.card-ico{
+  position:absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  opacity: .85;
+}
+
+/* Ajuste iPhone grande */
+@media (min-width: 390px){
+  .pay-page{ padding-top: 30px; }
 }
