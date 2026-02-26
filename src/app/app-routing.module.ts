@@ -43,6 +43,12 @@ const routes: Routes = [
   loadComponent: () =>
     import('./docs/docs.page').then((m) => m.DocsPage),
 },
+  {
+  path: 'docs-folder/:name',
+  loadComponent: () =>
+    import('./docs-folder/docs-folder.page').then((m) => m.DocsFolderPage),
+},
+
 ];
 
 @NgModule({

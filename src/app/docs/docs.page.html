@@ -12,9 +12,10 @@
     <h2>Carpetas</h2>
 
     <div class="chips">
-      <button class="chip" *ngFor="let f of folders">
-        {{ f.name }}
-      </button>
+      <!-- ✅ Ahora cada carpeta abre su pantalla -->
+      <button class="chip" *ngFor="let f of folders" (click)="openFolder(f.name)">
+  {{ f.name }}
+</button>
     </div>
   </div>
 

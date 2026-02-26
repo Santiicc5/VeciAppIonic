@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 type Folder = { name: string };
 type Doc = { title: string; chevron?: boolean };
@@ -13,6 +14,8 @@ type Doc = { title: string; chevron?: boolean };
   imports: [IonicModule, CommonModule],
 })
 export class DocsPage {
+  constructor(private router: Router) {}
+
   folders: Folder[] = [
     { name: 'Economía' },
     { name: 'Normativa' },
@@ -29,4 +32,8 @@ export class DocsPage {
     { title: 'Acta Junta Ordinaria 20/03/2023' },
     { title: 'Acta Junta Ordinaria\naprobación de cuentas 2022', chevron: true },
   ];
+
+  openFolder(name: string) {
+    this.router.navigate(['/docs-folder', name]);
+  }
 }

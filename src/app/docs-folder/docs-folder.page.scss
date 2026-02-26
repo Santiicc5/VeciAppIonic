@@ -1,0 +1,44 @@
+.header-blue ion-toolbar{
+  --background:#2f59ff;
+  --color:#fff;
+}
+
+.page{
+  --background:#f6f6f6;
+}
+
+.list{
+  padding: 16px;
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.file{
+  background:#ffffff;
+  border-radius: 12px;
+  padding: 12px 12px;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
+
+.file-ico{
+  font-size: 20px;
+  color:#2f59ff;
+}
+
+.file-name{
+  flex:1;
+  font-size: 14px;
+  color:#111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chev{
+  color:#9aa3b2;
+  font-size: 18px;
+}
