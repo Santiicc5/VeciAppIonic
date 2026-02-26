@@ -35,3 +35,42 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+/* Fondo general */
+ion-content {
+  --background: var(--app-bg);
+}
+
+/* Toolbar estilo iOS + degradado */
+.app-toolbar {
+  --color: #fff;
+  --background: transparent;
+}
+.app-toolbar::part(background) {
+  background: linear-gradient(180deg, var(--app-blue-1) 0%, var(--app-blue-2) 100%);
+}
+
+/* Cards “iOS” */
+.app-card {
+  background: var(--app-card);
+  border-radius: var(--app-radius);
+  box-shadow: var(--app-shadow);
+}
+
+/* Títulos */
+.h-title {
+  font-weight: 800;
+  color: var(--app-text);
+}
+.h-sub {
+  color: var(--app-muted);
+}
+
+/* Botones */
+.app-btn {
+  --background: var(--app-blue-1);
+  --color: #fff;
+  --border-radius: 14px;
+  font-weight: 800;
+  text-transform: none;
+}

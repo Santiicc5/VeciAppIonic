@@ -1,17 +1,23 @@
 <ion-header>
-  <ion-toolbar class="pr-toolbar">
+  <ion-toolbar class="app-toolbar">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/tabs/tab3"></ion-back-button>
     </ion-buttons>
-    <ion-title>Nuevo ascensor</ion-title>
+    <ion-title class="big-title">Nuevo ascensor</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="pr-content">
-  <div class="pr-page">
-    <div class="card">
-      <div class="lbl">Presupuesto</div>
-      <div class="amount">2000€/<span>6000€</span></div>
+<ion-content>
+  <div class="p-wrap">
+    <div class="app-card p-card">
+      <div class="p-label">Presupuesto</div>
+      <div class="p-amount">
+        2000€ <span>/ 6000€</span>
+      </div>
+
+      <div class="p-bar">
+        <div class="p-fill"></div>
+      </div>
     </div>
   </div>
 </ion-content>
