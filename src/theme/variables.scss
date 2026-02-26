@@ -1,2 +1,15 @@
 // For information on how to create your own theme, please refer to:
 // https://ionicframework.com/docs/theming/
+:root {
+  --app-blue-1: #1f46c6;
+  --app-blue-2: #2f59ff;
+
+  --app-bg: #eef1f7;
+  --app-card: #ffffff;
+
+  --app-text: #111827;
+  --app-muted: #6b7280;
+
+  --app-radius: 16px;
+  --app-shadow: 0 14px 28px rgba(0,0,0,.12);
+}

@@ -1,40 +1,45 @@
-.pr-toolbar{
-  --background:#2f59ff;
-  --color:#fff;
+.big-title{
+  font-size: 26px;
+  font-weight: 800;
 }
 
-.pr-content{
-  --background:#eef1f7;
+.p-wrap{
+  padding: 22px 18px;
 }
 
-.pr-page{
+.p-card{
   padding: 18px;
 }
 
-.card{
-  background:#fff;
-  border-radius: 12px;
-  padding: 16px;
-  width: 85%;
-  max-width: 360px;
-  box-shadow: 0 10px 20px rgba(0,0,0,.12);
-}
-
-.lbl{
-  font-size: 12px;
-  font-weight: 800;
-  color:#111827;
-  opacity: .75;
-  margin-bottom: 6px;
-}
-
-.amount{
-  font-size: 22px;
-  font-weight: 900;
-  color:#111827;
-}
-
-.amount span{
+.p-label{
+  font-size: 14px;
   font-weight: 700;
-  color:#6b7280;
+  color: var(--app-text);
+  opacity: .85;
+}
+
+.p-amount{
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--app-text);
+}
+.p-amount span{
+  font-weight: 700;
+  color: var(--app-muted);
+}
+
+.p-bar{
+  margin-top: 14px;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.08);
+  overflow: hidden;
+}
+
+.p-fill{
+  height: 100%;
+  width: 33%; /* 2000/6000 = 33% */
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2ecc71, #37d36f);
 }

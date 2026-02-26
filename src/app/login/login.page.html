@@ -1,30 +1,28 @@
-<ion-content class="login-bg">
-  <div class="wrap">
-
-    <img src="assets/icon/logo.png" class="logo" alt="VeciApp" />
-
-    <h1 class="title">VeciApp</h1>
-    <p class="subtitle">Gestión de tu comunidad</p>
-
-    <div class="form">
-
-      <div class="input">
-        <ion-icon name="person-outline"></ion-icon>
-        <ion-input placeholder="Usuario"></ion-input>
-      </div>
-
-      <div class="input">
-        <ion-icon name="lock-closed-outline"></ion-icon>
-        <ion-input type="password" placeholder="Contraseña"></ion-input>
-      </div>
-
-      <ion-button class="btn" expand="block" (click)="goHome()">
-      Iniciar sesión
-      </ion-button>
-
-      <div class="forgot">¿Olvidaste tu contraseña?</div>
-
+<ion-content class="l-content">
+  <div class="l-wrap">
+    <div class="l-top">
+      <img src="assets/icon/logo.png" class="l-logo" alt="VeciApp" />
+      <div class="l-title">VeciApp</div>
+      <div class="l-sub">Gestión de tu comunidad</div>
     </div>
 
+    <div class="l-form">
+      <div class="l-input">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-input placeholder="Usuario" inputmode="text"></ion-input>
+      </div>
+
+      <div class="l-input">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-input placeholder="Contraseña" type="password"></ion-input>
+      </div>
+
+      <!-- ✅ Este botón ya funciona -->
+      <ion-button class="l-btn" expand="block" routerLink="/tabs/tab1">
+        Iniciar sesión
+      </ion-button>
+
+      <div class="l-forgot">¿Olvidaste tu contraseña?</div>
+    </div>
   </div>
 </ion-content>
