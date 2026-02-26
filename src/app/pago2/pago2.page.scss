@@ -1,0 +1,58 @@
+.p2-toolbar{
+  --background:#2f59ff;
+  --color:#fff;
+}
+
+.p2-content{
+  --background:#eef1f7;
+}
+
+.p2-page{
+  padding: 18px;
+  display:flex;
+  flex-direction:column;
+  gap: 16px;
+}
+
+.group{
+  display:flex;
+  flex-direction:column;
+  gap: 6px;
+}
+
+.lbl{
+  font-size: 12px;
+  font-weight: 800;
+  color:#111827;
+  opacity: .75;
+}
+
+ion-input{
+  background:#fff;
+  border-radius: 8px;
+  padding-left: 10px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+.row{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
+
+.mini-card{
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+.row2{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}

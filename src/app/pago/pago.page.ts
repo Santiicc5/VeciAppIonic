@@ -1,19 +1,19 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-tab3',
-  templateUrl: 'tab3.page.html',
-  styleUrls: ['tab3.page.scss'],
+  selector: 'app-pago',
+  templateUrl: './pago.page.html',
+  styleUrls: ['./pago.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule],
 })
-export class Tab3Page {
+export class PagoPage {
   constructor(private router: Router) {}
 
-  goPago() {
-    this.router.navigateByUrl('/pago');
+  goPago2() {
+    this.router.navigateByUrl('/pago2');
   }
 }

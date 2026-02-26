@@ -1,0 +1,38 @@
+.p-toolbar{
+  --background:#2f59ff;
+  --color:#fff;
+}
+
+.p-content{
+  --background:#eef1f7;
+}
+
+.p-page{
+  min-height: calc(100vh - 56px);
+  padding: 18px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 24px;
+  padding-top: 22px;
+}
+
+.card{
+  background:#fff;
+  border-radius: 12px;
+  padding: 14px;
+  width: 85%;
+  max-width: 360px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.12);
+  color:#111827;
+  font-weight: 600;
+}
+
+.pay-btn{
+  height: 34px;
+  --background:#2f59ff;
+  --border-radius: 10px;
+  width: 110px;
+  font-weight: 800;
+  text-transform: none;
+}

@@ -64,6 +64,18 @@ const routes: Routes = [
     loadComponent: () =>
       import('./alertas2/alertas2.page').then((m) => m.Alertas2Page),
   },
+  {
+  path: 'pago',
+  loadComponent: () =>
+    import('./pago/pago.page').then((m) => m.PagoPage),
+},
+  {
+  path: 'pago2',
+  loadComponent: () =>
+    import('./pago2/pago2.page').then((m) => m.Pago2Page),
+},
+
+
 ];
 
 @NgModule({
