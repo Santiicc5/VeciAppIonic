@@ -1,0 +1,40 @@
+.pr-toolbar{
+  --background:#2f59ff;
+  --color:#fff;
+}
+
+.pr-content{
+  --background:#eef1f7;
+}
+
+.pr-page{
+  padding: 18px;
+}
+
+.card{
+  background:#fff;
+  border-radius: 12px;
+  padding: 16px;
+  width: 85%;
+  max-width: 360px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.12);
+}
+
+.lbl{
+  font-size: 12px;
+  font-weight: 800;
+  color:#111827;
+  opacity: .75;
+  margin-bottom: 6px;
+}
+
+.amount{
+  font-size: 22px;
+  font-weight: 900;
+  color:#111827;
+}
+
+.amount span{
+  font-weight: 700;
+  color:#6b7280;
+}

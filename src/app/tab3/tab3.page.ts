@@ -16,4 +16,7 @@ export class Tab3Page {
   goPago() {
     this.router.navigateByUrl('/pago');
   }
+  goPresupuesto() {
+  this.router.navigateByUrl('/presupuesto');
+}
 }

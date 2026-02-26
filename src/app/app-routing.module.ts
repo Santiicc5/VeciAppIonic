@@ -74,7 +74,11 @@ const routes: Routes = [
   loadComponent: () =>
     import('./pago2/pago2.page').then((m) => m.Pago2Page),
 },
-
+  {
+  path: 'presupuesto',
+  loadComponent: () =>
+    import('./presupuesto/presupuesto.page').then((m) => m.PresupuestoPage),
+},
 
 ];
 
