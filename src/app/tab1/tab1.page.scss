@@ -1,173 +1,166 @@
-.home-toolbar{
+:host { display:block; }
+
+.home-content{ --background:#eef1f7; }
+
+/* header */
+ion-toolbar.home-toolbar{
   --background:#2f59ff;
   --color:#fff;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+.t1-title{ font-size: 22px; font-weight: 900; line-height: 1.1; }
+.t1-subtitle{ font-size: 13px; opacity: .92; margin-top: 4px; }
 
-ion-title{
-  padding-left: 8px;
-}
-
-.t1-title{
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 1.1;
-}
-
-.t1-subtitle{
-  font-size: 12px;
-  opacity: .9;
-  margin-top: 4px;
-}
-
-.notif-btn{
-  position: relative;
-}
-
+.notif-btn{ position: relative; }
 .notif-dot{
-  position:absolute;
-  top: 6px;
-  right: 4px;
-  background:#ff3b30;
-  color:#fff;
-  border-radius: 999px;
-  font-size: 10px;
-  padding: 2px 6px;
-  line-height: 1.2;
+  position:absolute; top: 6px; right: 6px;
+  width: 16px; height: 16px; border-radius: 999px;
+  background:#ff3b30; color:#fff; font-size: 10px;
+  display:flex; align-items:center; justify-content:center;
 }
 
-.home-content{
-  --background:#eef1f7;
-}
-
+/* layout */
 .page{
-  padding: 16px;
-}
-
-.section-head{
+  padding: 14px 14px 18px;
   display:flex;
-  align-items:center;
-  gap:10px;
+  flex-direction:column;
+  gap: 12px;
+}
+
+/* section titles */
+.section-head{
+  display:flex; align-items:center; gap: 10px;
+  font-weight: 900; color:#111827;
   font-size: 18px;
-  font-weight: 800;
-  color:#111827; /* negro, no blanco */
-  margin: 14px 0 10px;
 }
+.section-head.plain{ margin-top: 6px; }
+.alert-ico{ color:#ff3b30; font-size: 18px; }
 
-.section-head.plain{
-  margin-top: 18px;
-}
-
-.alert-ico{
-  color:#ff3b30;
-  font-size: 22px;
-}
-
+/* cards */
 .card{
   background:#fff;
   border-radius: 14px;
   padding: 14px;
-  box-shadow: 0 12px 24px rgba(0,0,0,.10);
-  margin-bottom: 12px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.10);
 }
 
-.row{
-  display:flex;
-  gap:12px;
-  align-items:flex-start;
-}
-
-.square{
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+/* ✅ cabecera + cuerpo */
+.card-head{
   display:flex;
   align-items:center;
-  justify-content:center;
-  flex: 0 0 auto;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
-.square ion-icon{
-  color:#fff;
-  font-size: 20px;
+.card-body{
+  background: #f3f5fb;
+  border-radius: 12px;
+  padding: 12px;
 }
 
-.square.red{ background:#ff3b30; }
-.square.green{ background:#2ecc71; }
-.square.blue{ background:#2f59ff; }
+/* icon pill */
+.iconpill{
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  display:flex; align-items:center; justify-content:center;
+  flex: 0 0 46px;
+}
+.iconpill ion-icon{ font-size: 22px; color:#fff; }
+.iconpill.red{ background:#ff3b30; }
+.iconpill.green{ background:#22c55e; }
+.iconpill.blue{ background:#2f59ff; }
 
-.text{ flex:1; }
-
+/* titles + text */
 .card-title{
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 900;
   color:#111827;
+  margin: 0;
 }
 
 .card-sub{
-  margin-top: 4px;
   font-size: 13px;
   color:#6b7280;
+  margin: 0;
 }
 
+/* mensualidad lines */
 .line{
   display:flex;
   align-items:center;
-  justify-content: space-between;
-  margin-top: 10px;
+  gap: 10px;
+  padding: 6px 0;
+}
+
+.line + .line{
+  border-top: 1px solid rgba(0,0,0,0.06);
 }
 
 .k{
+  font-size: 14px;
   color:#111827;
   font-weight: 700;
 }
 
+.pill{
+  margin-left:auto;
+  background:#fff3d6;
+  color:#a16207;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-weight: 900;
+}
+
 .v{
-  font-weight: 800;
+  margin-left:auto;
+  font-size: 16px;
+  font-weight: 900;
   color:#111827;
 }
 
-.pill{
-  background:#fdebd2;
-  color:#8a5a00;
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-size: 12px;
-  font-weight: 800;
-}
-
+/* actas */
 .bullets{
-  margin: 10px 0 0;
+  margin: 0;
   padding-left: 18px;
   color:#6b7280;
   font-size: 13px;
 }
+.bullets li{ margin: 3px 0; }
 
+/* quick access */
 .quick{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
-  gap:12px;
-  margin-top: 10px;
+  gap: 12px;
 }
+
+/* ✅ relleno vertical sin “aire” raro */
+.quick-fill{ margin-top: 2px; }
 
 .quick-item{
   background:#fff;
   border-radius: 14px;
-  padding: 14px 10px;
-  text-align:center;
-  box-shadow: 0 12px 24px rgba(0,0,0,.10);
+  padding: 12px 10px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.10);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap: 8px;
+  position: relative;
+  cursor:pointer;
 }
 
 .quick-ico{
   width: 44px;
   height: 44px;
-  border-radius: 14px;
-  background:#eef1f7;
+  border-radius: 12px;
+  background:#eef2ff;
   display:flex;
   align-items:center;
   justify-content:center;
-  margin: 0 auto 8px;
 }
 
 .quick-ico ion-icon{
@@ -177,6 +170,21 @@ ion-title{
 
 .quick-t{
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 900;
   color:#111827;
+}
+
+.quick-chev{
+  position:absolute;
+  right: 10px;
+  top: 10px;
+  color:#9aa3b2;
+}
+
+/* móviles pequeños */
+@media (max-height: 700px){
+  .page{ padding: 12px 12px 16px; gap: 10px; }
+  .card{ padding: 12px; }
+  .card-body{ padding: 10px; }
+  .iconpill{ width: 42px; height: 42px; flex-basis: 42px; }
 }

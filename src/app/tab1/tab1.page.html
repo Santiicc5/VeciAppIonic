@@ -18,61 +18,60 @@
   <div class="page">
 
     <div class="section-head">
-      <ion-icon name="alert-circle" class="alert-ico"></ion-icon>
+      <ion-icon name="notifications" class="alert-ico"></ion-icon>
       <span>Alerta</span>
     </div>
 
-    <!-- Fuga -->
+    <!-- ✅ Fuga (cabecera + cuerpo) -->
     <div class="card">
-      <div class="row">
-        <div class="square red">
+      <div class="card-head">
+        <div class="iconpill red">
           <ion-icon name="water-outline"></ion-icon>
         </div>
+        <div class="card-title">Fuga de agua</div>
+      </div>
 
-        <div class="text">
-          <div class="card-title">Fuga de agua</div>
-          <div class="card-sub">Revisar departamento 302</div>
+      <div class="card-body">
+        <div class="card-sub">Revisar departamento 302</div>
+      </div>
+    </div>
+
+    <!-- ✅ Mensualidad (cabecera + cuerpo) -->
+    <div class="card">
+      <div class="card-head">
+        <div class="iconpill green">
+          <ion-icon name="logo-usd"></ion-icon>
+        </div>
+        <div class="card-title">Mensualidad</div>
+      </div>
+
+      <div class="card-body">
+        <div class="line">
+          <span class="k">Estado:</span>
+          <span class="pill">Pendiente</span>
+        </div>
+
+        <div class="line">
+          <span class="k">Monto:</span>
+          <span class="v">$800</span>
         </div>
       </div>
     </div>
 
-    <!-- Mensualidad -->
+    <!-- ✅ Actas digitales (cabecera + cuerpo) -->
     <div class="card">
-      <div class="row">
-        <div class="square green">
-          <ion-icon name="cash-outline"></ion-icon>
-        </div>
-
-        <div class="text">
-          <div class="card-title">Mensualidad</div>
-
-          <div class="line">
-            <span class="k">Estado:</span>
-            <span class="pill">Pendiente</span>
-          </div>
-
-          <div class="line">
-            <span class="k">Monto:</span>
-            <span class="v">$800</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Actas -->
-    <div class="card">
-      <div class="row">
-        <div class="square blue">
+      <div class="card-head">
+        <div class="iconpill blue">
           <ion-icon name="document-text-outline"></ion-icon>
         </div>
+        <div class="card-title">Actas digitales</div>
+      </div>
 
-        <div class="text">
-          <div class="card-title">Actas digitales</div>
-          <ul class="bullets">
-            <li>Acta Junta Ordinaria 15/03/2024</li>
-            <li>Acta Junta Ordinaria 20/03/2023</li>
-          </ul>
-        </div>
+      <div class="card-body">
+        <ul class="bullets">
+          <li>Acta Junta Ordinaria 15/03/2024</li>
+          <li>Acta Junta Ordinaria 20/03/2023</li>
+        </ul>
       </div>
     </div>
 
@@ -80,8 +79,7 @@
       <span>Accesos rápidos</span>
     </div>
 
-    <div class="quick">
-      <!-- Docs -->
+    <div class="quick quick-fill">
       <div class="quick-item" (click)="go('/docs')">
         <div class="quick-ico">
           <ion-icon name="document-text-outline"></ion-icon>
@@ -89,7 +87,6 @@
         <div class="quick-t">Docs</div>
       </div>
 
-      <!-- Incidencias -->
       <div class="quick-item" (click)="go('/mantenimiento')">
         <div class="quick-ico">
           <ion-icon name="alert-outline"></ion-icon>
@@ -97,12 +94,12 @@
         <div class="quick-t">Incidencias</div>
       </div>
 
-      <!-- Juntas -->
       <div class="quick-item" (click)="go('/meetings')">
         <div class="quick-ico">
           <ion-icon name="megaphone-outline"></ion-icon>
         </div>
         <div class="quick-t">Juntas</div>
+        <ion-icon name="chevron-forward" class="quick-chev"></ion-icon>
       </div>
     </div>
 
