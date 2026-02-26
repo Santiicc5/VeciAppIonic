@@ -1,0 +1,24 @@
+.a-toolbar{
+  --background:#2f59ff;
+  --color:#fff;
+}
+
+.a-content{
+  --background:#eef1f7;
+}
+
+.a-page{
+  padding: 18px;
+}
+
+.msg-card{
+  background:#fff;
+  border-radius: 12px;
+  padding: 16px;
+  width: fit-content;
+  max-width: 85%;
+  box-shadow: 0 10px 20px rgba(0,0,0,.12);
+  color:#111827;
+  font-weight: 600;
+  line-height: 1.25;
+}

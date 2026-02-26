@@ -20,14 +20,14 @@
     </div>
 
     <div class="inc-list">
-      <div class="inc-item">
-        <ion-icon name="alert-circle" class="inc-ico"></ion-icon>
-        <div>Fuga de agua</div>
+      <div class="inc-item clickable" (click)="goAlertaFuga()">
+         <ion-icon name="alert-circle" class="inc-ico"></ion-icon>
+       <div>Fuga de agua</div>
       </div>
-      <div class="inc-item">
+      <div class="inc-item clickable" (click)="goAlertaBombilla()">
         <ion-icon name="alert-circle" class="inc-ico"></ion-icon>
-        <div>Bombilla fundida</div>
-      </div>
+       <div>Bombilla fundida</div>
+</div>
     </div>
 
     <div class="row-head agenda">

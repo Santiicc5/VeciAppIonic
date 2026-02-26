@@ -16,4 +16,11 @@ export class MantenimientoPage {
   goNuevaIncidencia() {
     this.router.navigateByUrl('/nueva-incidencia');
   }
+  goAlertaFuga() {
+  this.router.navigateByUrl('/alertas1');
+}
+goAlertaBombilla() {
+  this.router.navigateByUrl('/alertas2');
+}
+
 }
