@@ -8,11 +8,11 @@
 </ion-header>
 
 <ion-content class="page">
-  <div class="list">
-    <div class="file" *ngFor="let f of files">
-      <ion-icon [name]="iconFor(f.name)" class="file-ico"></ion-icon>
-      <div class="file-name">{{ f.name }}</div>
-      <ion-icon name="chevron-forward" class="chev"></ion-icon>
-    </div>
+    <div class="list">
+  <div class="file" *ngFor="let f of files" (click)="download(f.name)">
+    <ion-icon [name]="iconFor(f.name)" class="file-ico"></ion-icon>
+    <div class="file-name">{{ f.name }}</div>
+    <ion-icon name="chevron-forward" class="chev"></ion-icon>
+  </div>
   </div>
 </ion-content>

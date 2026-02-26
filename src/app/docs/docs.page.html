@@ -23,10 +23,10 @@
     <h2>Actas digitales</h2>
 
     <div class="doclist">
-      <div class="doc" *ngFor="let d of actas">
-        <div class="doc-text" [class.two-line]="d.chevron">{{ d.title }}</div>
-        <ion-icon *ngIf="d.chevron" name="chevron-forward" class="doc-chev"></ion-icon>
-      </div>
-    </div>
+  <div class="doc" *ngFor="let d of actas" (click)="downloadActa(d.title)">
+    <div class="doc-text" [class.two-line]="d.chevron">{{ d.title }}</div>
+    <ion-icon *ngIf="d.chevron" name="chevron-forward" class="doc-chev"></ion-icon>
+  </div>
+</div>
   </div>
 </ion-content>

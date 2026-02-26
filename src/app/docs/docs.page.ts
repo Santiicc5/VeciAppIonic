@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, ToastController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 type Folder = { name: string };
@@ -14,7 +14,10 @@ type Doc = { title: string; chevron?: boolean };
   imports: [IonicModule, CommonModule],
 })
 export class DocsPage {
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private toastCtrl: ToastController
+  ) {}
 
   folders: Folder[] = [
     { name: 'Economía' },
@@ -35,5 +38,14 @@ export class DocsPage {
 
   openFolder(name: string) {
     this.router.navigate(['/docs-folder', name]);
+  }
+
+  async downloadActa(title: string) {
+    const toast = await this.toastCtrl.create({
+      message: `Descargando: ${title.replace('\n', ' ')}`,
+      duration: 1600,
+      position: 'bottom',
+    });
+    await toast.present();
   }
 }

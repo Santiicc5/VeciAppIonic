@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, ToastController } from '@ionic/angular';
 import { ActivatedRoute } from '@angular/router';
 
 type FileItem = { name: string };
@@ -16,11 +16,13 @@ export class DocsFolderPage {
   title = 'Carpeta';
   files: FileItem[] = [];
 
-  constructor(private route: ActivatedRoute) {
+  constructor(
+    private route: ActivatedRoute,
+    private toastCtrl: ToastController
+  ) {
     const name = this.route.snapshot.paramMap.get('name') || 'Carpeta';
     this.title = name;
 
-    // Mock de archivos por carpeta (luego lo podéis conectar a Firebase/API)
     const data: Record<string, FileItem[]> = {
       Economía: [
         { name: 'Presupuesto anual 2024.pdf' },
@@ -32,10 +34,6 @@ export class DocsFolderPage {
       Normativa: [
         { name: 'Normas convivencia.pdf' },
         { name: 'Reglamento piscina.pdf' },
-      ],
-      Seguros: [
-        { name: 'Seguro comunidad.pdf' },
-        { name: 'Partes y siniestros.pdf' },
       ],
     };
 
@@ -51,5 +49,14 @@ export class DocsFolderPage {
     if (f.endsWith('.xls') || f.endsWith('.xlsx')) return 'stats-chart-outline';
     if (f.endsWith('.doc') || f.endsWith('.docx')) return 'reader-outline';
     return 'document-outline';
+  }
+
+  async download(fileName: string) {
+    const toast = await this.toastCtrl.create({
+      message: `Descargando: ${fileName}`,
+      duration: 1600,
+      position: 'bottom',
+    });
+    await toast.present();
   }
 }
