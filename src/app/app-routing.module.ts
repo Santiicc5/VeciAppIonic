@@ -32,31 +32,6 @@ const routes: Routes = [
     loadComponent: () =>
       import('./mantenimiento/mantenimiento.page').then((m) => m.MantenimientoPage),
   },
-<<<<<<< HEAD
-=======
-  {
-  path: 'docs',
-  loadComponent: () =>
-    import('./docs/docs.page').then((m) => m.DocsPage),
-},
- {
-  path: 'nueva-incidencia',
-  loadComponent: () =>
-    import('./nueva-incidencia/nueva-incidencia.page').then((m) => m.NuevaIncidenciaPage),
-},
- {
-  path: 'alertas1',
-  loadComponent: () =>
-    import('./alertas1/alertas1.page').then((m) => m.Alertas1Page),
-},
- {
-  path: 'alertas2',
-  loadComponent: () =>
-    import('./alertas2/alertas2.page').then((m) => m.Alertas2Page),
-},
-
-
->>>>>>> e01f6c155ea5369f1d4beb799328a7e93fb4c725
 
   // ✅ Documentos
   {
@@ -76,6 +51,18 @@ const routes: Routes = [
     path: 'nueva-incidencia',
     loadComponent: () =>
       import('./nueva-incidencia/nueva-incidencia.page').then((m) => m.NuevaIncidenciaPage),
+  },
+
+  // ✅ Alertas
+  {
+    path: 'alertas1',
+    loadComponent: () =>
+      import('./alertas1/alertas1.page').then((m) => m.Alertas1Page),
+  },
+  {
+    path: 'alertas2',
+    loadComponent: () =>
+      import('./alertas2/alertas2.page').then((m) => m.Alertas2Page),
   },
 ];
 
