@@ -6,56 +6,52 @@ const routes: Routes = [
 
   {
     path: 'login',
-    loadComponent: () =>
-      import('./login/login.page').then((m) => m.LoginPage),
+    loadComponent: () => import('./login/login.page').then((m) => m.LoginPage),
   },
 
   {
     path: 'tabs',
-    loadChildren: () =>
-      import('./tabs/tabs.module').then((m) => m.TabsPageModule),
+    loadChildren: () => import('./tabs/tabs.module').then((m) => m.TabsPageModule),
   },
 
   // ✅ Chat tipo WhatsApp/Telegram: /chat/comunidad, /chat/escalera1, etc.
   {
     path: 'chat/:name',
-    loadComponent: () =>
-      import('./chat/chat.page').then((m) => m.ChatPage),
+    loadComponent: () => import('./chat/chat.page').then((m) => m.ChatPage),
   },
 
   // ✅ Juntas y votaciones
   {
     path: 'meetings',
-    loadComponent: () =>
-      import('./meetings/meetings.page').then((m) => m.MeetingsPage),
+    loadComponent: () => import('./meetings/meetings.page').then((m) => m.MeetingsPage),
   },
 
   // ✅ Mantenimiento
   {
     path: 'mantenimiento',
     loadComponent: () =>
-      import('./mantenimiento/mantenimiento.page').then(
-        (m) => m.MantenimientoPage
-      ),
+      import('./mantenimiento/mantenimiento.page').then((m) => m.MantenimientoPage),
   },
-  {
-  path: 'docs',
-  loadComponent: () =>
-    import('./docs/docs.page').then((m) => m.DocsPage),
-},
-<<<<<<< HEAD
-  {
-  path: 'docs-folder/:name',
-  loadComponent: () =>
-    import('./docs-folder/docs-folder.page').then((m) => m.DocsFolderPage),
-=======
- {
-  path: 'nueva-incidencia',
-  loadComponent: () =>
-    import('./nueva-incidencia/nueva-incidencia.page').then((m) => m.NuevaIncidenciaPage),
->>>>>>> ccb41835bd1e3763158701f31138cc7f37550173
-},
 
+  // ✅ Documentos
+  {
+    path: 'docs',
+    loadComponent: () => import('./docs/docs.page').then((m) => m.DocsPage),
+  },
+
+  // ✅ Carpeta de documentos (Economía, Normativa, etc.)
+  {
+    path: 'docs-folder/:name',
+    loadComponent: () =>
+      import('./docs-folder/docs-folder.page').then((m) => m.DocsFolderPage),
+  },
+
+  // ✅ Nueva incidencia
+  {
+    path: 'nueva-incidencia',
+    loadComponent: () =>
+      import('./nueva-incidencia/nueva-incidencia.page').then((m) => m.NuevaIncidenciaPage),
+  },
 ];
 
 @NgModule({
