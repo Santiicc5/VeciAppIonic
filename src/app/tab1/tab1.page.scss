@@ -20,6 +20,12 @@ ion-toolbar.home-toolbar{
   display:flex; align-items:center; justify-content:center;
 }
 
+/* ✅ FontAwesome: campana en el botón */
+.notif-btn i{
+  font-size: 20px;
+  color: #fff;
+}
+
 /* layout */
 .page{
   padding: 14px 14px 18px;
@@ -36,6 +42,12 @@ ion-toolbar.home-toolbar{
 }
 .section-head.plain{ margin-top: 6px; }
 .alert-ico{ color:#ff3b30; font-size: 18px; }
+
+/* ✅ FontAwesome: icono de alerta */
+.alert-fa{
+  color:#ff3b30;
+  font-size: 18px;
+}
 
 /* cards */
 .card{
@@ -67,6 +79,13 @@ ion-toolbar.home-toolbar{
   flex: 0 0 46px;
 }
 .iconpill ion-icon{ font-size: 22px; color:#fff; }
+
+/* ✅ FontAwesome dentro del iconpill */
+.iconpill i{
+  color:#fff;
+  font-size: 20px;
+}
+
 .iconpill.red{ background:#ff3b30; }
 .iconpill.green{ background:#22c55e; }
 .iconpill.blue{ background:#2f59ff; }
@@ -163,7 +182,14 @@ ion-toolbar.home-toolbar{
   justify-content:center;
 }
 
+/* Ionicons (si aún quedan en alguna pantalla) */
 .quick-ico ion-icon{
+  font-size: 22px;
+  color:#2f59ff;
+}
+
+/* ✅ FontAwesome en accesos rápidos */
+.quick-ico i{
   font-size: 22px;
   color:#2f59ff;
 }
