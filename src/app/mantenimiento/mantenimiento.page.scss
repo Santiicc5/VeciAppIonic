@@ -63,63 +63,52 @@
 .cal-card{
   background:#fff;
   border-radius: 16px;
-  padding: 10px 12px 14px;
+  padding: 12px;
   box-shadow: 0 12px 24px rgba(0,0,0,.10);
   margin-top: 10px;
 }
 
-.cal-top{
-  display:flex;
-  align-items:center;
-  justify-content: space-between;
-  margin-bottom: 8px;
+.clickable { cursor: pointer; }
+
+/* ✅ Estilos FullCalendar para que parezca vuestra app */
+.cal-card :deep(.fc){
+  font-family: inherit;
 }
 
-.month{
-  font-weight: 800;
+.cal-card :deep(.fc-toolbar-title){
+  font-size: 16px;
+  font-weight: 900;
   color:#111827;
 }
 
-.nav{
-  --color:#111827;
+.cal-card :deep(.fc-button){
+  background: transparent;
+  border: none;
+  color:#111827;
 }
 
-.week{
-  display:grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 6px;
-  font-size: 11px;
-  font-weight: 800;
-  color:#6b7280;
-  text-align:center;
-  padding: 6px 2px;
-  border-top: 1px solid rgba(0,0,0,.06);
-  border-bottom: 1px solid rgba(0,0,0,.06);
+.cal-card :deep(.fc-button:focus){
+  box-shadow: none;
 }
 
-.grid{
-  display:grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 6px;
-  padding-top: 10px;
-}
-
-.d{
-  height: 34px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius: 12px;
+.cal-card :deep(.fc-daygrid-day-number){
   color:#111827;
   font-weight: 700;
 }
 
-.d.other{
-  color:#9ca3af;
+.cal-card :deep(.fc-col-header-cell-cushion){
+  color:#6b7280;
+  font-weight: 900;
+  font-size: 11px;
 }
 
-.d.selected{
-  background:#2f59ff;
-  color:#fff;
+.cal-card :deep(.fc-day-today){
+  background: rgba(47,89,255,0.08);
 }
-.clickable { cursor: pointer; }
+
+.cal-card :deep(.fc-event){
+  border: none;
+  border-radius: 10px;
+  padding: 2px 6px;
+  font-weight: 800;
+}
