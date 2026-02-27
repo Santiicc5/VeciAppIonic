@@ -30,10 +30,12 @@
 .name.green{ color:#3bb54a; }
 
 .bubble{
-  background:#e9e9ee;
+  background:#ffffff;                 /* ✅ blanco */
   padding: 10px 12px;
   border-radius: 12px;
   display:inline-block;
+  border: 1px solid rgba(0,0,0,0.08); /* opcional */
+  color:#111827;
 }
 
 .msg.mine .bubble{
@@ -43,8 +45,19 @@
 }
 
 .footer{
-  background: transparent;
+  --background: #f6f6f6;   /* mismo que el fondo */
+  background: #f6f6f6;
   border: none;
+  box-shadow: none;
+}
+
+ion-footer{
+  background: #f6f6f6;
+}
+
+/* Por si hay una línea arriba del footer */
+ion-footer::before{
+  background: transparent !important;
 }
 
 .inputbar{

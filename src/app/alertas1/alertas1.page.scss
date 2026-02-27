@@ -1,24 +1,62 @@
+/* Toolbar degradado como iOS */
 .a-toolbar{
-  --background:#2f59ff;
   --color:#fff;
+  --background: transparent;
+}
+.a-toolbar::part(background){
+  background: linear-gradient(180deg, #1f46c6 0%, #2f59ff 100%);
 }
 
+/* Fondo suave */
 .a-content{
-  --background:#eef1f7;
+  --background: linear-gradient(180deg, #eef1f7 0%, #f6f7fb 55%, #eef1f7 100%);
 }
 
-.a-page{
+/* Espaciado */
+.a-wrap{
   padding: 18px;
 }
 
-.msg-card{
+/* Título grande */
+.a-title{
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* Tarjeta */
+.a-card{
+  display:flex;
+  align-items:flex-start;
+  gap: 12px;
+
   background:#fff;
-  border-radius: 12px;
-  padding: 16px;
-  width: fit-content;
-  max-width: 85%;
-  box-shadow: 0 10px 20px rgba(0,0,0,.12);
+  border-radius: 14px;
+  padding: 14px 16px;
+
+  box-shadow: 0 16px 28px rgba(0,0,0,.12);
+  max-width: 88%;
+}
+
+/* Icono rojo circular */
+.a-icon{
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background:#ff3b30;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight: 900;
+  font-size: 16px;
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+
+/* Texto */
+.a-text{
   color:#111827;
   font-weight: 600;
   line-height: 1.25;
+  font-size: 14px;
 }
